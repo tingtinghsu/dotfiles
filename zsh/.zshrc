@@ -69,7 +69,7 @@ stty stop undef
 
 # asdf setting
 . $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
+# . $HOME/.asdf/completions/asdf.bash
 
 # User configuration
 export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -82,6 +82,9 @@ export LC_CTYPE=en_US.UTF-8
 # For pair
 pairg() { ssh -t $1 ssh -o 'StrictHostKeyChecking=no' -o 'UserKnownHostsFile=/dev/null' -p $2 -t vagrant@localhost 'tmux attach' }
 pairh() { ssh -S none -o 'ExitOnForwardFailure=yes' -R $2\:localhost:22222 -t $1 'watch -en 10 who' }
+
+# Puma
+alias pup='cRAILS_RELATIVE_URL_ROOT=/nerv bundle exec puma -d -C config/puma.rb config.ru'
 
 # Use nvim
 alias e='nvim'
