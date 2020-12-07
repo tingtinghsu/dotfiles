@@ -167,7 +167,7 @@ alias yt='yarn test'
 alias ycop='yarn eslint --fix-dry-run src/'
 
 # Nerv Projects
-alias ck='cd ~/nerv_ck'
+alias ck='cd ~/perv'
 alias hk='cd ~/nerv'
 alias ka='cd ~/nerv_asuka'
 alias eva='cd eva/asuka'
@@ -175,6 +175,7 @@ alias agl='cd ~/angel'
 alias ame='cd ~/amoeba'
 alias adm='cd ~/nerv/clojure/adam'
 
+alias sync='cd /vagrant/synced'
 alias ch_pw='rails runner /vagrant/synced/ch_pw.rb'
 alias e_pw='vim /vagrant/synced/ch_pw.rb'
 alias dump_db='/vagrant/scripts/db_dump.rb -f && ch_pw'
@@ -228,8 +229,10 @@ alias repl='l repl'
 # Jump Into Config File
 ########################
 alias dot='cd ~/dotfiles'
+alias pryrc='e ~/.pryrc'
 alias zshrc='e ~/.zshrc'
 alias sozsh='source ~/.zshrc'
+alias sopry='source ~/.pryrc'
 alias vimrc='e ~/.config/nvim/init.vim'
 alias en='e .env'
 alias mc='mailcatcher --http-ip 0.0.0.0 ; seki'

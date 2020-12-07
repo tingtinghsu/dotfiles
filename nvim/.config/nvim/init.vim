@@ -290,7 +290,6 @@ noremap <silent> <leader>V :source ~/.config/nvim/init.vim<CR>:filetype detect<C
 
 " fzf search
 nnoremap <C-p> :GFiles<CR>
-nnoremap <leader>rg :Rg<CR>
 nnoremap <leader>fb :Buffers<CR>
 nnoremap <leader>fc :Files app/concepts<CR>
 let g:fzf_preview_window = 'right:33%'
