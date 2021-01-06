@@ -68,7 +68,7 @@ stty start undef
 stty stop undef
 
 # asdf setting
-. $HOME/.asdf/asdf.sh
+# . $HOME/.asdf/asdf.sh
 # . $HOME/.asdf/completions/asdf.bash
 
 # User configuration
@@ -80,7 +80,7 @@ export LANG=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
 
 # For pair
-pairg() { ssh -t $1 ssh -o 'StrictHostKeyChecking=no' -o 'UserKnownHostsFile=/dev/null' -p $2 -t vagrant@localhost 'tmux attach' }
+pairg() { ssh -t $1 ssh -o 'StrictHostKeyChecking=no' -o 'UserKnownHostsFile=/dev/null' -p $2 -t ${3:-vagrant@localhost} 'tmux attach' }
 pairh() { ssh -S none -o 'ExitOnForwardFailure=yes' -R $2\:localhost:22222 -t $1 'watch -en 10 who' }
 
 # Puma
@@ -100,6 +100,7 @@ alias setup_tags='ctags -R'
 # For vagrant
 alias va=vagrant
 alias vup='va up'
+alias vpro='va provision'
 alias vssh='va ssh'
 alias vhalt='va halt'
 alias vhlat='va halt'
@@ -167,6 +168,7 @@ alias yt='yarn test'
 alias ycop='yarn eslint --fix-dry-run src/'
 
 # Nerv Projects
+alias work='cd ~/Documents/Projects/vm'
 alias ck='cd ~/perv'
 alias hk='cd ~/nerv'
 alias ka='cd ~/nerv_asuka'

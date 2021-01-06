@@ -1,7 +1,14 @@
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+
 [push]
   default = simple
 
 [core]
+  excludesfile = /Users/tingtinghsu/.gitignore_global
   editor = nvim
   # pager = diff-highlight | less
 
@@ -20,5 +27,20 @@
   newHighlight = green bold 22
 
 [user]
-	email = ting.hsu@abagile.com
-	name = ting
+	# self
+  name = tingtinghsu
+  email = tingtinghsu.tw@gmail.com
+
+	# work
+  #	email = ting.hsu@abagile.com
+	# name = ting
+
+[difftool "sourcetree"]
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path = 
+
+[mergetool "sourcetree"]
+  cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
+[commit]
+  template = /Users/tingtinghsu/.stCommitMsg

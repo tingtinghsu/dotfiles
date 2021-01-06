@@ -1,8 +1,8 @@
 " Install Vim Plug at first setup
 " curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-let g:python_host_prog = $HOME . '/.asdf/installs/python/2.7.18/bin/python'
-let g:python3_host_prog = $HOME . '/.asdf/installs/python/3.6.9/bin/python'
+ let g:python_host_prog = $HOME . '/.asdf/installs/python/2.7.18/bin/python'
+ let g:python3_host_prog = $HOME . '/.asdf/installs/python/3.6.9/bin/python'
 
 call plug#begin()
 
@@ -40,7 +40,6 @@ Plug 'tpope/vim-cucumber'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'christoomey/vim-tmux-runner'
 Plug 'majutsushi/tagbar' " list all methods in a file
-Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
 
 "================================================
 " Javascript/HTML
@@ -209,9 +208,9 @@ let g:clojure_highlight_references = 1
        \ }
 
 " let g:sexp_enable_insert_mode_mappings = 0
-let g:deoplete#enable_at_startup = 1
-call deoplete#custom#option('keyword_patterns', {'clojure': '[\w!$%&*+/:<=>?@\^_~\-\.#]*'})
-set completeopt-=preview
+" let g:deoplete#enable_at_startup = 1
+" call deoplete#custom#option('keyword_patterns', {'clojure': '[\w!$%&*+/:<=>?@\^_~\-\.#]*'})
+" set completeopt-=preview
 "
 "
 let g:ale_linters = {
@@ -442,7 +441,7 @@ set showtabline=2
 " let ayucolor="light"  " for light version of theme
 " let ayucolor="mirage" " for mirage version of theme
 " colorscheme ayu       " l lightline: ayu_light / ayu_mirage
-colorscheme dracula   " lightline: dracula
+" colorscheme dracula   " lightline: dracula
 " colorscheme iceberg   " lightline: iceberg
 set background=dark
 
