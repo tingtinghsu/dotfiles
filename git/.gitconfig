@@ -20,7 +20,7 @@
   newHighlight = green bold 22
 
 [user]
-  email = wenchuan.lin@abagile.com
-  name  = spring
+  email = tingtinghsu.tw@gmail.com
+  name  = tingtinghsu
 [pull]
 	rebase = false
