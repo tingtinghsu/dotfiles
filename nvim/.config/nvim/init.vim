@@ -40,7 +40,8 @@ Plug 'dense-analysis/ale'
 Plug 'tpope/vim-dispatch'
 Plug 'radenling/vim-dispatch-neovim'
 Plug 'bootleq/vim-qrpsqlpq'
-Plug 'thinca/vim-quickrun', {'commit': 'c980977f1d77b3285937b9d7b5baa964fc9ed7f5'}
+Plug 'thinca/vim-quickrun'
+" Plug 'thinca/vim-quickrun', {'commit': 'c980977f1d77b3285937b9d7b5baa964fc9ed7f5'}
 " Plug 'janko-m/vim-test'
 Plug 'tpope/vim-cucumber'
 Plug 'christoomey/vim-tmux-navigator'
